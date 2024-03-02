@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+.input {
+    /* width: %; */
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    outline: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: border 0.3s ease-in-out;
+}
+
+.input:focus {
+    border: 1px solid #4CAF50;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0.25px 0.25px 7px #4CAF50;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.button-container {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#convert-button,
+#reset-button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#convert-button:hover,
+#reset-button:hover {
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: solid 2px;
+    border-color: #4CAF50;
+    transition: all ease 0.5s;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    .input {
+        width: 50%;
+    }
+}
